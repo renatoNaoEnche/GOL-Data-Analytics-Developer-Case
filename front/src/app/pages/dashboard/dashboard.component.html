@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Campo A</th>
+      <th>Campo B</th>
+      <!-- ... -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.campoA }}</td>
+      <td>{{ item.campoB }}</td>
+      <!-- ... -->
+    </tr>
+  </tbody>
+</table>
